@@ -1,0 +1,31 @@
+.card-overview{
+    background: white;
+    border-radius: 5px;
+    padding: 15px 0px 25px 25px;
+    width: 176px;
+    box-shadow: .5px .5px 7px rgb(219, 219, 219);
+}
+
+.card-icon{
+    width: fit-content;
+    padding: .16em .3em;
+    border-radius: 30px;
+}
+
+.card-overview p{
+    margin-top: .6em;
+    margin-bottom: .6em;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .1em;
+}
+
+.card-overview h3{
+    font-size: 25px;
+}
+
+@media screen  and (max-width: 1100px){
+    .card-overview{
+        
+    }
+}

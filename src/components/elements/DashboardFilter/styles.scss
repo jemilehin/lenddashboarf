@@ -1,0 +1,25 @@
+.filter-container{
+    position: absolute;
+    width: 200px;
+    padding: 2em 1.5em;
+    top: 3.5em;
+    left: .8em;
+    background: white;
+    box-shadow: .5px .5px 5px rgb(219, 219, 219);
+}
+
+.btn-width{
+    width: 47%;
+    padding: .6em 0;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-icon-wrapper{
+    position: absolute;
+    right: .3em;
+    top: .4em;
+}

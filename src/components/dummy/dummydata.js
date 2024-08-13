@@ -1,0 +1,15 @@
+export const Users = [
+    {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'inactive'},
+    {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'pending'},
+    {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'blacklisted'},
+    {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'pending'},
+    {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'active'},
+    {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'active'},
+    {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'blacklisted'},
+    {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'inactive'},
+    {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'inactive'},
+    // {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'inactive'},
+    // {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'inactive'},
+    // {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'inactive'},
+    // {organization: 'Lendsqr', username: 'Adedeji', email: 'adedeji@lendsqr.com', phone: '08074467478', createdAt: 'May 15, 2020 10:00AM', status: 'inactive'},
+] 
