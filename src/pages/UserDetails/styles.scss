@@ -1,0 +1,207 @@
+$color: #2a6f98;
+$borderwidth: 1px solid gray;
+$shadow: .1em .1em .8em rgb(238, 238, 238);
+
+.pagetitle-container{
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.pagetitle-container, .user-circle, .left-details, .user-details, .user-info-container, .user-menu ul{
+    display: flex;
+}
+
+.user-details{
+    padding-bottom: 1.3em;
+}
+
+.user-details,.user-circle, .user-menu ul{
+    align-items: center;
+}
+
+.user-circle{
+    height: 4em;
+    width: 4em;
+    border-radius: 6em;
+    background: #e8e8f5;
+    justify-content: center;
+}
+
+.small-font{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.small-font,.medium-font{
+    color: $color; 
+}
+
+.medium-font{
+    font-size: 16px;
+}
+
+.user-name{
+    padding-right: .5em;
+}
+
+.left-details{
+    align-items: center;
+    width: fit-content;
+    padding: 0 1em;
+}
+
+.middle-details{
+    width: fit-content;
+    text-align: center;
+    border-left: $borderwidth;
+    border-right: $borderwidth;
+    padding: .3em 1em;
+}
+
+.user-info-container{
+    height: fit-content;
+}
+
+.middle-details p{
+    text-align:center;
+    font-weight: 700; 
+    font-size: .7em;
+    color: $color;
+}
+
+.right-details{
+    padding: 0 .8em;
+}
+
+.right-details p{
+    font-weight: 700;
+}
+
+.btn-blacklist{
+    border-color: rgb(255, 0, 140);
+    color: rgb(255, 0, 140);
+    margin-right: .8em;
+}
+
+.btn-activate{
+    border-color: $color;
+    color: $color;
+    margin-left: .8em;
+}
+
+.btn-blacklist, .btn-activate{
+    padding: .8em 1.4em;
+    letter-spacing: .1em;
+    font-weight: 700;
+    border-radius: .5em;
+}
+
+.card-menu{
+    margin-top: 1em;
+    box-shadow: $shadow;
+    padding: 1em 1.5em 0em 1.5em;
+}
+
+.user-menu{
+    padding-top: 1em;
+}
+
+.user-menu ul{
+    justify-content: space-between;
+}
+
+.user-menu ul li{
+    flex-grow: 1;
+    text-align: center;
+    padding: .3em 0;
+    cursor: pointer;
+}
+
+.active-component{
+    border-bottom: .1em solid $color; 
+}
+
+.user-container{
+    padding: .8em 2em;
+    box-shadow: $shadow;
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 375px) {
+    .user-container{
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .card-menu .user-details, .card-menu .user-menu{
+        display: none;
+    }
+
+    .card-menu{
+        padding-left: 0;
+    }
+
+    .pagetitle-container{
+        flex-direction: column;
+    }
+
+    .pagetitle-container div{
+        margin-top: 1em;
+    }
+
+    .mobile-user-info{
+        width: 100%;
+        display: flex;
+    }
+    
+    .info-inner-right{
+        width: 100%;
+        overflow-x: auto;
+        padding: 0 .5em;
+    }
+    
+    .info-inner-right .user-info-container{
+        flex-direction: column;
+    }
+    
+    .info-inner-right .user-info-container .left-details{
+        width: 100%;
+    }
+    
+    .info-inner-right .user-info-container .left-details .user-name{
+        padding: 0 .4em;
+    }
+    
+    .info-inner-right .user-info-container .middle-details{
+        border-left: none;
+        border-right: none;
+    }
+    
+    .info-inner-right .user-info-container .middle-details, .info-inner-right .user-info-container .middle-details p{
+        text-align: left;
+    }
+    
+    .info-inner-right .user-info-container .left-details, .info-inner-right .user-info-container .middle-details, .info-inner-right .user-info-container .right-details{
+        padding: .5em 0
+    }
+    
+    .info-inner-right .user-info-container .right-details{
+        border-top: 1px solid;
+    }
+    
+    .info-inner-right .user-info-container .left-details{
+        border-bottom: 1px solid;
+    }
+
+    .mobile-active-comp{
+        border-left: 2pxx solid $color;
+    }
+}
+
+@media screen and (min-width:613px) {
+    .mobile-user-info{
+        display: none;
+    }
+}

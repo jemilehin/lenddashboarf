@@ -1,0 +1,250 @@
+$shadow:  .5px .5px 8px rgb(219, 219, 219);
+$border-color: gray ;
+$input_btn_bg: #63c6c6;
+
+.sqr-header{
+    background: white;
+    padding: 5px 10px;
+    box-shadow: $shadow;
+    z-index: 10;
+    position: relative;
+}
+
+.leftsqr-header{
+    width: 50%;
+    justify-content: space-between;
+}
+
+.leftsqr-header, .userdropdown, .rightsqr-header ul, .sqr-header, .dashboard-menu ul li a{
+    display: flex;
+    align-items: center;
+}
+
+.search-input-container{
+    display: flex;
+    height: 35px;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 50%;
+}
+
+.search-input, .search-input:focus-visible{
+    border: none;
+    width: 80%;
+    outline: 0;
+}
+
+.searchbtn{
+    background-color: $input_btn_bg;
+    flex-grow: 1;
+}
+
+.searchbtn, .userdropdown, .mobile-search-btn-action{
+    border: none;
+}
+
+.userdropdown{
+    background-color: transparent;
+}
+
+.profile-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 90px;
+}
+
+.rightsqr-header{
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+}
+
+.rightsqr-header ul, .dashboard-menu ul{
+   list-style-type: none;
+}
+
+.rightsqr-header ul li{
+    padding: 0 10px;
+}
+
+.dashboard-menu{
+    position: absolute;
+    height: fit-content;
+    box-shadow: $shadow;
+    padding-bottom: 1.2em;
+}
+
+.dashboard-menu ul li a {
+    text-decoration: none;
+}
+
+.dashboard-menu ul{
+    padding-inline-start: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-menu ul li{
+    padding:  10px 20px;
+}
+
+.page_container{
+    margin-left: 15em;
+    margin-top: 1em;
+}
+
+.status{
+    width: fit-content;
+    padding: .3em 1em ;
+    border-radius: 20px;
+}
+
+.dashboard-menu-bottom{
+    padding: 1em 0;
+    border-bottom: .5em solid rgb(237, 228, 228);
+    width: 100%;
+}
+
+.menu-divider{
+    border-bottom: .2em solid rgb(237, 228, 228);
+    margin-top: 2em;
+    margin-bottom: 1em
+}
+
+.toggle-menu{
+    display: none;
+}
+
+.mobile-search-btn{
+    display: none;
+    position: relative;
+    background: $input_btn_bg;
+    padding: .2em .5em;
+    border-radius: 1em;
+    left: .5em;
+    box-shadow: $shadow;
+}
+
+.mobile-input-slide-up, .mobile-input-slide-down{
+    box-shadow: .3px 1px 4px rgb(143, 143, 143);
+    // border-radius: 3em;
+    height: 35px;
+    overflow: hidden;
+    padding: 0 0px 0 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.mobile-input-off{
+    display: none;
+}
+
+.mobile-input-wrapper{
+    position: relative;
+    height: inherit;
+}
+
+.mobile-input-wrapper input{
+    height: inherit;
+    padding: 0px 7px;
+    width: 200px;
+}
+
+.mobile-search-btn-action{
+    background-color: $input_btn_bg;
+    height: inherit;
+    padding: 0 .6em;
+}
+
+.mobile-search-btn-action svg{
+    position: relative;
+    top: 3px
+}
+
+.active-link{
+    border-left: 4px solid #213f7d;
+}
+
+.slide-down-constant{
+    display: block;
+    top: 75px;
+}
+
+@media screen and (max-width: 426px){
+    .search-input-container{
+        display: none;
+    }
+
+    .rightsqr-header{
+        flex-grow: 1!important;
+    }
+
+    .leftsqr-header{
+        flex-grow: 0!important;
+    }
+
+    .mobile-search-btn{
+        display: block;
+    }
+
+    .mobile-input-slide-down{
+        animation-name: slide-down;
+        animation-duration: 2s;
+    }
+
+    .mobile-input-slide-up{
+        animation-name: slide-up;
+        animation-duration: 4s;
+    }
+
+    @keyframes slide-down {
+        0% { top:0px; opacity: 0}
+        50% {opacity: .5;}
+        to {top: 75px; opacity: 1;}
+    }
+
+    @keyframes slide-up {
+        from {opacity: 1; top:75px;}
+        to {opacity: 0; top: 0;}
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dashboard-menu .rightsqr-header{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard-container{
+        padding-left: .3em;
+        padding-right: .3em;
+    }
+
+    .dashboard-menu{
+        display: none;
+    }
+
+    .page_container{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .rightsqr-header ul{
+        display: none;
+    }
+
+    .toggle-menu{
+        display: block;
+        width: fit-content;
+    }
+
+    .leftsqr-header{
+        flex-grow: 1;
+    }
+
+    .rightsqr-header{
+        flex-grow: 0.2;
+    }
+}

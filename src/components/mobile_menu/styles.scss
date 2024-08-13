@@ -1,0 +1,47 @@
+$shadow:  .5px .5px 8px rgb(219, 219, 219);
+
+.mobile-off{
+    display: none;
+}
+
+.mobile-dashboard-menu, .out-menu{
+    position: absolute;
+    height: fit-content;
+    box-shadow: $shadow;
+    padding-bottom: 1.2em;
+    z-index: 999;
+    background: white;
+}
+
+.mobile-dashboard-menu ul li a, .out-menu ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.mobile-dashboard-menu ul li, .out-menu ul li{
+    padding:  10px 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .mobile-dashboard-menu{
+        animation-name: menu-in;
+        animation-duration: 2s;
+    }
+
+    .out-menu{
+        animation-name: menu-out;
+        animation-duration: 4s;
+    }
+
+    @keyframes menu-in {
+        from {left:-999px}
+        to {left: 0}
+    }
+
+    @keyframes menu-out {
+        from {left:0}
+        to {left: -999px}
+    }
+}

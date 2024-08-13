@@ -1,0 +1,35 @@
+$top-margin: .3em;
+$shadow: .5px .5px 5px rgb(219, 219, 219);
+
+.input-container{
+    padding: .5em 0;
+}
+
+.input-container select{
+    font-size: 15px;
+    padding: .4em .4em;
+    border: 1px solid black;
+}
+
+.input-container select, .input-wrapper{
+    margin-top: $top-margin;
+    box-shadow: $shadow;
+    width: 100%;
+    position: relative;
+}
+
+.input-wrapper input, .input-container select{
+    border-radius: 5px;
+}
+
+.input-wrapper input{
+    width: 100%;
+    border: 1px solid black;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.input-wrapper input::placeholder{
+    padding-left: .7em;
+    color: black;
+}
