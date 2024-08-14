@@ -45,6 +45,8 @@ $pagination-background: rgb(234, 244, 254);
 
 .pagination-left{
     width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .pagination-left select{
